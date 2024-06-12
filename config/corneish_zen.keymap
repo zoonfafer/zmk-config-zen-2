@@ -108,6 +108,35 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <2 3>;
+        };
+
+        ctrl {
+            bindings = <&kp LEFT_CONTROL>;
+            key-positions = <26 27>;
+        };
+
+        cmd {
+            bindings = <&kp LEFT_COMMAND>;
+            key-positions = <38 37>;
+        };
+
+        alt {
+            bindings = <&kp RIGHT_ALT>;
+            key-positions = <39 40>;
+        };
+
+        del {
+            bindings = <&kp DELETE>;
+            key-positions = <32 33>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -169,6 +198,15 @@
 &trans  &trans  &trans  &trans  &sys_reset  &bootloader    &bootloader  &trans  &trans  &trans  &kp PRINTSCREEN  &kp F12
 &trans  &trans  &trans  &trans  &trans      &trans         &trans       &trans  &trans  &trans  &kp SCROLLLOCK   &kp PAUSE_BREAK
                         &trans  &trans      &trans         &trans       &trans  &trans
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
