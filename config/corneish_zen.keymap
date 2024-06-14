@@ -272,7 +272,7 @@
         compatible = "zmk,conditional-layers";
 
         Mgmt-Left {
-            if-layers = <2 4>;
+            if-layers = <2 3>;
             then-layer = <5>;
         };
 
