@@ -6,7 +6,8 @@
 
 
 
-(forked from https://github.com/a741725193/zmk-config-zen-2)
+(forked from https://github.com/a741725193/zmk-config-zen-2,
+which in turn is forked from https://github.com/LOWPROKB/zmk-config-zen-2)
 
 ## Features
 
