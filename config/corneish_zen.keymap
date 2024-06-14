@@ -176,46 +176,10 @@
             //                    | XXXX| XXXX| XXXX|   | XXXX| XXXX| XXXX|
 
             bindings = <
-&mt LS(TAB) TAB        &kp Q              &kp W                &kp E            &kp R                                    &kp T          &kp Y        &kp U                                    &kp I             &kp O                 &kp P                       &kp BSPC
-&mt LEFT_SHIFT ESCAPE  &hml LEFT_SHIFT A  &hml LEFT_CONTROL S  &hml LEFT_ALT D  &hml LEFT_COMMAND F                      &kp G          &kp H        &hmr RIGHT_COMMAND J                     &hmr RIGHT_ALT K  &hmr RIGHT_CONTROL L  &hmr RIGHT_SHIFT SEMICOLON  &kp SQT
-&td0                   &kp Z              &kp X                &kp C            &kp V                                    &kp B          &kp N        &kp M                                    &kp COMMA         &kp DOT               &kp FSLH                    &kp ENTER
-                                                               &kp LGUI         &rgb_mo RGB_COLOR_HSB_VAL(174,100,50) 1  &lt 4 SPACE    &lt 4 ENTER  &rgb_mo RGB_COLOR_HSB_VAL(181,100,92) 2  &kp RALT
-            >;
-        };
-
-        unknown_layer {
-            display-name = "UNKNOWN";
-
-            // TODO: insert keymap ASCII art here
-            // -----------------------------------------------------------------------------------------
-            // | XXXX | XXXX| XXXX| XXXX| XXXX| XXXX|   | XXXX| XXXX| XXXX| XXXX| XXXX| XXXX |
-            // | XXXX | XXXX| XXXX| XXXX| XXXX| XXXX|   | XXXX| XXXX| XXXX| XXXX| XXXX| XXXX |
-            // | XXXX | XXXX| XXXX| XXXX| XXXX| XXXX|   | XXXX| XXXX| XXXX| XXXX| XXXX| XXXX |
-            //                    | XXXX| XXXX| XXXX|   | XXXX| XXXX| XXXX|
-
-            bindings = <
-&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6  &kp N7   &kp N8  &kp N9  &kp N0  &kp BSPC
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans   &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans   &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &kp DEL  &trans
-            >;
-        };
-
-        numsym_layer {
-            display-name = "NUMSYM";
-
-            // TODO: insert keymap ASCII art here
-            // -----------------------------------------------------------------------------------------
-            // | XXXX | XXXX| XXXX| XXXX| XXXX| XXXX|   | XXXX| XXXX| XXXX| XXXX| XXXX| XXXX |
-            // | XXXX | XXXX| XXXX| XXXX| XXXX| XXXX|   | XXXX| XXXX| XXXX| XXXX| XXXX| XXXX |
-            // | XXXX | XXXX| XXXX| XXXX| XXXX| XXXX|   | XXXX| XXXX| XXXX| XXXX| XXXX| XXXX |
-            //                    | XXXX| XXXX| XXXX|   | XXXX| XXXX| XXXX|
-
-            bindings = <
-&mt TILDE GRAVE  &mt EXCL NUMBER_1  &mt AT NUMBER_2  &mt HASH NUMBER_3  &mt DLLR NUMBER_4  &mt PRCNT NUMBER_5    &mt CARET NUMBER_6  &mt AMPS NUMBER_7  &mt ASTRK NUMBER_8  &mt LPAR NUMBER_9  &mt RPAR NUMBER_0  &mt UNDERSCORE MINUS
-&trans           &trans             &trans           &trans             &kp LEFT_BRACKET   &kp RIGHT_BRACKET     &kp MINUS           &kp KP_NUMBER_4    &kp KP_NUMBER_5     &kp KP_NUMBER_6    &kp RIGHT_BRACKET  &mt PIPE BACKSLASH
-&trans           &trans             &trans           &trans             &kp LEFT_BRACE     &kp RIGHT_BRACE       &kp UNDER           &kp KP_NUMBER_1    &kp KP_NUMBER_2     &kp KP_NUMBER_3    &kp RIGHT_BRACE    &trans
-                                                     &trans             &trans             &kp SPACE             &kp RET             &trans             &trans
+&mt TILDE GRAVE          &kp Q  &kp W                &kp E            &kp R                                    &kp T          &kp Y            &kp U                                    &kp I                &kp O                    &kp P                       &kp BSPC
+&mt LEFT_SHIFT TAB       &kp A  &hml LEFT_CONTROL S  &hml LEFT_ALT D  &hml LEFT_COMMAND F                      &kp G          &kp H            &hmr RIGHT_COMMAND J                     &hmr RIGHT_ALT K     &hmr RIGHT_CONTROL L     &hmr RIGHT_SHIFT SEMICOLON  &kp SQT
+&mt LEFT_CONTROL ESCAPE  &kp Z  &kp X                &kp C            &kp V                                    &kp B          &kp N            &kp M                                    &mt LESS_THAN COMMA  &mt GREATER_THAN PERIOD  &mt QUESTION SLASH          &kp ENTER
+                                                     &kp LGUI         &rgb_mo RGB_COLOR_HSB_VAL(174,100,50) 2  &lt 3 SPACE    &lt 4 BACKSPACE  &rgb_mo RGB_COLOR_HSB_VAL(181,100,92) 1  &mt RALT GLOBE
             >;
         };
 
@@ -230,13 +194,41 @@
             //                    | XXXX| XXXX| XXXX|   | XXXX| XXXX| XXXX|
 
             bindings = <
-&trans  &trans  &msc SCRL_LEFT    &mmv MOVE_UP    &msc SCRL_RIGHT    &msc SCRL_UP        &kp PAGE_UP    &mkp LCLK       &kp UP_ARROW    &mkp MCLK        &kp PAGE_UP    &kp HOME
-&trans  &trans  &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &msc SCRL_DOWN      &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN  &kp END
-&trans  &trans  &trans            &trans          &trans             &trans              &trans         &mkp RCLK       &trans          &trans           &trans         &trans
-                                  &trans          &trans             &trans              &trans         &trans          &trans
+&trans  &trans  &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &msc SCRL_UP      &kp PAGE_UP    &mkp LCLK       &kp UP_ARROW    &mkp MCLK        &kp PAGE_UP    &kp HOME
+&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN    &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN  &kp END
+&trans  &trans  &trans          &trans          &trans           &trans            &trans         &mkp RCLK       &trans          &trans           &trans         &trans
+                                &trans          &trans           &trans            &trans         &trans          &trans
             >;
 
             label = "hi";
+        };
+
+        symbol_layer {
+            display-name = "SYMBOLS";
+
+            // TODO: insert keymap ASCII art here
+            // -----------------------------------------------------------------------------------------
+            // | XXXX | XXXX| XXXX| XXXX| XXXX| XXXX|   | XXXX| XXXX| XXXX| XXXX| XXXX| XXXX |
+            // | XXXX | XXXX| XXXX| XXXX| XXXX| XXXX|   | XXXX| XXXX| XXXX| XXXX| XXXX| XXXX |
+            // | XXXX | XXXX| XXXX| XXXX| XXXX| XXXX|   | XXXX| XXXX| XXXX| XXXX| XXXX| XXXX |
+            //                    | XXXX| XXXX| XXXX|   | XXXX| XXXX| XXXX|
+
+            bindings = <
+&mt TILDE GRAVE  &kp EXCL                          &kp AT                               &kp HASH                    &kp DLLR                         &kp PRCNT    &kp CARET  &kp AMPS  &kp ASTRK      &kp LPAR          &kp RPAR  &mt UNDERSCORE MINUS
+&trans           &hml LEFT_SHIFT LEFT_PARENTHESIS  &hml LEFT_CONTROL RIGHT_PARENTHESIS  &hml LEFT_ALT LEFT_BRACKET  &hml LEFT_COMMAND RIGHT_BRACKET  &kp PLUS     &kp MINUS  &trans    &trans         &trans            &kp PIPE  &mt PIPE BACKSLASH
+&trans           &trans                            &trans                               &kp LEFT_BRACE              &kp RIGHT_BRACE                  &kp EQUAL    &kp UNDER  &trans    &kp LESS_THAN  &kp GREATER_THAN  &trans    &trans
+                                                                                        &trans                      &trans                           &kp SPACE    &kp RET    &trans    &trans
+            >;
+        };
+
+        number_layer {
+            display-name = "NUMBERS";
+            bindings = <
+&mt TILDE GRAVE  &mt EXCL NUMBER_1                 &mt AT NUMBER_2                      &mt HASH NUMBER_3           &mt DLLR NUMBER_4                &mt PRCNT NUMBER_5    &mt CARET NUMBER_6  &mt AMPS NUMBER_7               &mt ASTRK NUMBER_8          &mt LPAR NUMBER_9               &mt RPAR NUMBER_0               &mt UNDERSCORE MINUS
+&trans           &hml LEFT_SHIFT LEFT_PARENTHESIS  &hml LEFT_CONTROL RIGHT_PARENTHESIS  &hml LEFT_ALT LEFT_BRACKET  &hml LEFT_COMMAND RIGHT_BRACKET  &kp PLUS              &kp MINUS           &hml RIGHT_COMMAND KP_NUMBER_4  &hml RIGHT_ALT KP_NUMBER_5  &hml RIGHT_CONTROL KP_NUMBER_6  &hml RIGHT_SHIFT RIGHT_BRACKET  &mt PIPE BACKSLASH
+&trans           &kp LESS_THAN                     &kp GREATER_THAN                     &kp LEFT_BRACE              &kp RIGHT_BRACE                  &kp EQUAL             &kp UNDER           &kp KP_NUMBER_1                 &kp KP_NUMBER_2             &kp KP_NUMBER_3                 &kp RIGHT_BRACE                 &trans
+                                                                                        &trans                      &trans                           &kp SPACE             &kp RET             &trans                          &trans
+            >;
         };
 
         fn_layer {
@@ -273,6 +265,20 @@
 &soft_off   &rgb_ug RGB_TOG  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI    &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &trans        &soft_off
                                               &trans           &trans           &trans             &trans           &trans           &trans
             >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        Mgmt-Left {
+            if-layers = <2 4>;
+            then-layer = <5>;
+        };
+
+        Mgmt-Right {
+            if-layers = <1 4>;
+            then-layer = <5>;
         };
     };
 };
