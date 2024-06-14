@@ -1,4 +1,35 @@
-on: [push, pull_request, workflow_dispatch]
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - master
+      - 'release/**'
+    paths-ignore:
+      - '/*.sh'
+      - '/.*'
+      - '/_*'
+      - 'Brewfile'
+      - 'docs/**'
+      - '**.adoc'
+      - '**.md'
+      - '**.nix'
+      - 'flake.lock'
+      - 'version.txt'
+      - '.github/workflows/*.yml'
+      - '!.github/workflows/build.yml'
+  pull_request:
+    paths-ignore:
+      - '/*.sh'
+      - '/.*'
+      - '/_*'
+      - 'Brewfile'
+      - 'docs/**'
+      - '**.adoc'
+      - '**.md'
+      - '**.nix'
+      - 'flake.lock'
+      - 'version.txt'
 
 jobs:
   build:
