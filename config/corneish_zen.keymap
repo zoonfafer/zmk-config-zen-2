@@ -184,7 +184,7 @@
         };
 
         nav_layer {
-            display-name = "NAV/MOUSE";
+            display-name = "NAV";
 
             // TODO: insert keymap ASCII art here
             // -----------------------------------------------------------------------------------------
@@ -199,8 +199,6 @@
 &trans  &trans  &trans          &trans          &trans           &trans            &trans         &mkp RCLK       &trans          &trans           &trans         &trans
                                 &trans          &trans           &trans            &trans         &trans          &trans
             >;
-
-            label = "hi";
         };
 
         symbol_layer {
@@ -223,6 +221,13 @@
 
         number_layer {
             display-name = "NUMBERS";
+
+            // TODO: insert keymap ASCII art here
+            // -----------------------------------------------------------------------------------------
+            // | XXXX | XXXX| XXXX| XXXX| XXXX| XXXX|   | XXXX| XXXX| XXXX| XXXX| XXXX| XXXX |
+            // | XXXX | XXXX| XXXX| XXXX| XXXX| XXXX|   | XXXX| XXXX| XXXX| XXXX| XXXX| XXXX |
+            // | XXXX | XXXX| XXXX| XXXX| XXXX| XXXX|   | XXXX| XXXX| XXXX| XXXX| XXXX| XXXX |
+            //                    | XXXX| XXXX| XXXX|   | XXXX| XXXX| XXXX|
             bindings = <
 &mt TILDE GRAVE  &kp NUMBER_1                      &kp NUMBER_2                         &kp NUMBER_3                &kp NUMBER_4                     &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7                    &kp NUMBER_8                &kp NUMBER_9                    &kp NUMBER_0                    &mt UNDERSCORE MINUS
 &trans           &hml LEFT_SHIFT LEFT_PARENTHESIS  &hml LEFT_CONTROL RIGHT_PARENTHESIS  &hml LEFT_ALT LEFT_BRACKET  &hml LEFT_COMMAND RIGHT_BRACKET  &kp PLUS        &kp MINUS     &hml RIGHT_COMMAND KP_NUMBER_4  &hml RIGHT_ALT KP_NUMBER_5  &hml RIGHT_CONTROL KP_NUMBER_6  &hml RIGHT_SHIFT RIGHT_BRACKET  &mt PIPE BACKSLASH
@@ -271,13 +276,23 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
-        Mgmt-Left {
+        Mgmt-LL {
             if-layers = <2 3>;
             then-layer = <5>;
         };
 
-        Mgmt-Right {
+        Mgmt-RR {
             if-layers = <1 4>;
+            then-layer = <5>;
+        };
+
+        Mgmt-Outer {
+            if-layers = <1 2>;
+            then-layer = <5>;
+        };
+
+        Mgmt-Inner {
+            if-layers = <3 4>;
             then-layer = <5>;
         };
     };
