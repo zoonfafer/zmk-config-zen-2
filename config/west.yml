@@ -4,8 +4,10 @@ manifest:
       url-base: https://github.com/zmkfirmware
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
-    - name: krikun98
-      url-base: https://github.com/krikun98
+    # - name: krikun98
+    #   url-base: https://github.com/krikun98
+    - name: petejohanson
+      url-base: https://github.com/petejohanson
   projects:
     # Default:
     # - name: zmk
@@ -13,9 +15,13 @@ manifest:
     #   revision: main
     #   import: app/west.yml
     # Mouse patch
+    # - name: zmk
+    #   remote: krikun98
+    #   revision: mouse-pr
+    #   import: app/west.yml
     - name: zmk
-      remote: krikun98
-      revision: mouse-pr
+      remote: petejohanson
+      revision: feat/pointers-move-scroll
       import: app/west.yml
   self:
     path: config
