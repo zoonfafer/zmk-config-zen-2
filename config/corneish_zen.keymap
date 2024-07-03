@@ -137,26 +137,6 @@
     combos {
         compatible = "zmk,combos";
 
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <2 3>;
-        };
-
-        ctrl {
-            bindings = <&kp LEFT_CONTROL>;
-            key-positions = <26 27>;
-        };
-
-        cmd {
-            bindings = <&kp LEFT_COMMAND>;
-            key-positions = <38 37>;
-        };
-
-        alt {
-            bindings = <&kp RIGHT_ALT>;
-            key-positions = <39 40>;
-        };
-
         del {
             bindings = <&kp DELETE>;
             key-positions = <32 33>;
