@@ -157,10 +157,10 @@
             //                    | XXXX| XXXX| XXXX|   | XXXX| XXXX| XXXX|
 
             bindings = <
-&kp GRAVE                &kp Q  &kp W                &kp E            &kp R                &kp T             &kp Y           &kp U                 &kp I             &kp O                 &kp P                       &kp BSPC
-&mt LEFT_SHIFT TAB       &kp A  &hml LEFT_CONTROL S  &hml LEFT_ALT D  &hml LEFT_COMMAND F  &kp G             &kp H           &hmr RIGHT_COMMAND J  &hmr RIGHT_ALT K  &hmr RIGHT_CONTROL L  &hmr RIGHT_SHIFT SEMICOLON  &kp SQT
-&mt LEFT_CONTROL ESCAPE  &kp Z  &kp X                &kp C            &kp V                &kp B             &kp N           &kp M                 &kp COMMA         &kp DOT               &kp FSLH                    &kp ENTER
-                                                     &kp LGUI         &lt 3 BACKSPACE      &lt 2 C_REPEAT    &lt 4 C_REPEAT  &lt 1 SPACE           &mt RALT GLOBE
+&kp GRAVE                &kp Q  &kp W                &kp E            &kp R                &kp T           &kp Y        &kp U                 &kp I             &kp O                 &kp P                       &kp BSPC
+&mt LEFT_SHIFT TAB       &kp A  &hml LEFT_CONTROL S  &hml LEFT_ALT D  &hml LEFT_COMMAND F  &kp G           &kp H        &hmr RIGHT_COMMAND J  &hmr RIGHT_ALT K  &hmr RIGHT_CONTROL L  &hmr RIGHT_SHIFT SEMICOLON  &kp SQT
+&mt LEFT_CONTROL ESCAPE  &kp Z  &kp X                &kp C            &kp V                &kp B           &kp N        &kp M                 &kp COMMA         &kp DOT               &kp FSLH                    &kp ENTER
+                                                     &key_repeat      &lt 3 BACKSPACE      &lt 2 ESCAPE    &lt 4 ENTER  &lt 1 SPACE           &mt RALT GLOBE
             >;
         };
 
@@ -178,7 +178,7 @@
 &trans  &trans  &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &msc SCRL_UP      &kp PAGE_UP    &mkp LCLK       &kp UP_ARROW    &mkp MCLK        &kp PAGE_UP    &kp HOME
 &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN    &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN  &kp END
 &trans  &trans  &trans          &trans          &trans           &trans            &trans         &mkp RCLK       &trans          &trans           &trans         &trans
-                                &trans          &trans           &kp DELETE        &trans         &trans          &trans
+                                &trans          &kp DELETE       &trans            &trans         &trans          &trans
             >;
         };
 
