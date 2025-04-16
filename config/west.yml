@@ -6,22 +6,22 @@ manifest:
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
     # - name: krikun98
     #   url-base: https://github.com/krikun98
-    - name: petejohanson
-      url-base: https://github.com/petejohanson
+    # - name: petejohanson
+    #   url-base: https://github.com/petejohanson
   projects:
     # Default:
-    # - name: zmk
-    #   remote: zmkfirmware
-    #   revision: main
-    #   import: app/west.yml
+    - name: zmk
+      remote: zmkfirmware
+      revision: main
+      import: app/west.yml
     # Mouse patch
     # - name: zmk
     #   remote: krikun98
     #   revision: mouse-pr
     #   import: app/west.yml
-    - name: zmk
-      remote: petejohanson
-      revision: feat/pointers-move-scroll
-      import: app/west.yml
+    # - name: zmk
+    #   remote: petejohanson
+    #   revision: feat/pointers-move-scroll
+    #   import: app/west.yml
   self:
     path: config
