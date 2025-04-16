@@ -16,6 +16,8 @@
 &sk {
 };
 
+&mt { flavor = "balanced"; };
+
 / {
     chosen {
         zmk,matrix_transform = &default_transform;
