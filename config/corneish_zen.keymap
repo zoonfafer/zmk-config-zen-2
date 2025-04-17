@@ -198,10 +198,10 @@
             //                    | XXXX| XXXX| XXXX|   | XXXX| XXXX| XXXX|
 
             bindings = <
-&mt TILDE GRAVE  &kp EXCL                          &kp AT                               &kp HASH                    &kp DLLR                         &kp PRCNT    &kp CARET  &kp AMPS           &kp ASTRK      &kp LPAR           &kp RPAR               &mt UNDERSCORE MINUS
-&trans           &hml LEFT_SHIFT LEFT_PARENTHESIS  &hml LEFT_CONTROL RIGHT_PARENTHESIS  &hml LEFT_ALT LEFT_BRACKET  &hml LEFT_COMMAND RIGHT_BRACKET  &kp PLUS     &kp MINUS  &kp RIGHT_COMMAND  &kp RIGHT_ALT  &kp RIGHT_CONTROL  &hmr RIGHT_SHIFT PIPE  &mt PIPE BACKSLASH
-&trans           &trans                            &trans                               &kp LEFT_BRACE              &kp RIGHT_BRACE                  &kp EQUAL    &kp UNDER  &trans             &kp LESS_THAN  &kp GREATER_THAN   &trans                 &trans
-                                                                                        &trans                      &trans                           &trans       &trans     &trans             &trans
+&mt TILDE GRAVE  &kp EXCL                          &kp AT                               &kp HASH                    &kp DLLR                         &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK      &kp LPAR           &kp RPAR               &mt UNDERSCORE MINUS
+&trans           &hml LEFT_SHIFT LEFT_PARENTHESIS  &hml LEFT_CONTROL RIGHT_PARENTHESIS  &hml LEFT_ALT LEFT_BRACKET  &hml LEFT_COMMAND RIGHT_BRACKET  &none        &kp MINUS  &kp PLUS   &kp RIGHT_ALT  &kp RIGHT_CONTROL  &hmr RIGHT_SHIFT PIPE  &mt PIPE BACKSLASH
+&trans           &none                             &none                                &kp LEFT_BRACE              &kp RIGHT_BRACE                  &none        &kp UNDER  &kp EQUAL  &kp LESS_THAN  &kp GREATER_THAN   &none                  &none
+                                                                                        &trans                      &trans                           &trans       &trans     &trans     &trans
             >;
         };
 
@@ -216,9 +216,9 @@
             //                    | XXXX| XXXX| XXXX|   | XXXX| XXXX| XXXX|
 
             bindings = <
-&mt TILDE GRAVE  &kp NUMBER_1                      &kp NUMBER_2                         &kp NUMBER_3                &kp NUMBER_4                     &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7                    &kp NUMBER_8                &kp NUMBER_9                    &kp NUMBER_0                    &mt UNDERSCORE MINUS
-&trans           &hml LEFT_SHIFT LEFT_PARENTHESIS  &hml LEFT_CONTROL RIGHT_PARENTHESIS  &hml LEFT_ALT LEFT_BRACKET  &hml LEFT_COMMAND RIGHT_BRACKET  &kp PLUS        &kp MINUS     &hml RIGHT_COMMAND KP_NUMBER_4  &hml RIGHT_ALT KP_NUMBER_5  &hml RIGHT_CONTROL KP_NUMBER_6  &hml RIGHT_SHIFT RIGHT_BRACKET  &mt PIPE BACKSLASH
-&trans           &kp LESS_THAN                     &kp GREATER_THAN                     &kp LEFT_BRACE              &kp RIGHT_BRACE                  &kp EQUAL       &kp UNDER     &kp KP_NUMBER_1                 &kp KP_NUMBER_2             &kp KP_NUMBER_3                 &kp RIGHT_BRACE                 &trans
+&mt TILDE GRAVE  &kp NUMBER_1                      &kp NUMBER_2                         &kp NUMBER_3                &kp NUMBER_4                     &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7                    &kp NUMBER_8                &kp NUMBER_9                    &kp NUMBER_0           &mt UNDERSCORE MINUS
+&trans           &hml LEFT_SHIFT LEFT_PARENTHESIS  &hml LEFT_CONTROL RIGHT_PARENTHESIS  &hml LEFT_ALT LEFT_BRACKET  &hml LEFT_COMMAND RIGHT_BRACKET  &none           &kp MINUS     &hml RIGHT_COMMAND KP_NUMBER_4  &hml RIGHT_ALT KP_NUMBER_5  &hml RIGHT_CONTROL KP_NUMBER_6  &hml RIGHT_SHIFT PLUS  &mt PIPE BACKSLASH
+&trans           &none                             &none                                &kp LEFT_BRACE              &kp RIGHT_BRACE                  &none           &kp UNDER     &kp KP_NUMBER_1                 &kp KP_NUMBER_2             &kp KP_NUMBER_3                 &kp EQUAL              &none
                                                                                         &trans                      &trans                           &trans          &trans        &trans                          &trans
             >;
         };
@@ -235,8 +235,8 @@
 
             bindings = <
 &kp F1  &kp F2          &kp F3            &kp F4             &kp F5       &kp F6                  &kp F7             &kp F8          &kp F9            &kp F10     &kp F11          &kp F12
-&trans  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp K_SCREENSAVER  &kp C_SLEEP  &kp C_BRIGHTNESS_INC    &kp C_VOLUME_UP    &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp PRINTSCREEN  &trans
-&trans  &trans          &trans            &trans             &trans       &kp C_BRIGHTNESS_DEC    &kp C_VOLUME_DOWN  &kp K_MUTE      &kp C_STOP        &trans      &kp SCROLLLOCK   &kp PAUSE_BREAK
+&trans  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp K_SCREENSAVER  &kp C_SLEEP  &kp C_BRIGHTNESS_INC    &kp C_VOLUME_UP    &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp PRINTSCREEN  &none
+&trans  &none           &none             &none              &none        &kp C_BRIGHTNESS_DEC    &kp C_VOLUME_DOWN  &kp K_MUTE      &kp C_STOP        &none       &kp SCROLLLOCK   &kp PAUSE_BREAK
                                           &trans             &trans       &trans                  &trans             &trans          &trans
             >;
         };
@@ -256,15 +256,6 @@
 &bl BL_DEC  &bl BL_TOG       &out OUT_BLE     &out OUT_USB     &sys_reset       &bootloader        &bootloader      &sys_reset       &out OUT_USB     &out OUT_BLE     &trans        &bt BT_CLR_ALL
 &soft_off   &rgb_ug RGB_TOG  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI    &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &trans        &soft_off
                                               &trans           &trans           &trans             &trans           &trans           &trans
-            >;
-        };
-
-        layer_6 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
