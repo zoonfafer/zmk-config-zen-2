@@ -152,12 +152,12 @@
             key-positions = <26 27>;
         };
 
-        ctrlA-L {
+        ctrlA_L {
             bindings = <&kp LC(A)>;
             key-positions = <28 25>;
         };
 
-        ctrlA-R {
+        ctrlA_R {
             bindings = <&kp RC(A)>;
             key-positions = <31 34>;
         };
