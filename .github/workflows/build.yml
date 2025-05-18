@@ -52,7 +52,16 @@ jobs:
           name: firmware
           path: ./firmware
 
+      - name: Upload merged artifact again
+        id: upload
+        uses: actions/upload-artifact@v4
+        with:
+          overwrite: true
+          name: firmware
+          path: ./firmware
+
       - name: Attest Build Provenance
         uses: actions/attest-build-provenance@v2
         with:
-          subject-path: ./firmware
+          subject-name: firmware
+          subject-digest: sha256:${{ steps.upload.outputs.artifact-digest }}
