@@ -264,13 +264,13 @@
         compatible = "zmk,conditional-layers";
 
         Mgmt-LL {
-            if-layers = <1 5>;
-            then-layer = <6>;
+            if-layers = <1 2>;
+            then-layer = <5>;
         };
 
         Mgmt-RR {
-            if-layers = <3 3>;
-            then-layer = <6>;
+            if-layers = <3 4>;
+            then-layer = <5>;
         };
     };
 };
