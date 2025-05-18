@@ -161,6 +161,11 @@
             bindings = <&kp RC(A)>;
             key-positions = <31 34>;
         };
+
+        cmd_tab {
+            bindings = <&kp LG(TAB)>;
+            key-positions = <12 38>;
+        };
     };
 
     keymap {
