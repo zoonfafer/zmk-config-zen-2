@@ -146,6 +146,21 @@
             bindings = <&kp DELETE>;
             key-positions = <32 33>;
         };
+
+        escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <26 27>;
+        };
+
+        ctrlA-L {
+            bindings = <&kp LC(A)>;
+            key-positions = <28 25>;
+        };
+
+        ctrlA-R {
+            bindings = <&kp RC(A)>;
+            key-positions = <31 34>;
+        };
     };
 
     keymap {
