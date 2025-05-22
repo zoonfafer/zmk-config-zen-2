@@ -149,7 +149,7 @@
 
         escape {
             bindings = <&kp ESCAPE>;
-            key-positions = <26 27>;
+            key-positions = <2 3>;
         };
 
         ctrlA_L {
@@ -165,6 +165,11 @@
         cmd_tab {
             bindings = <&kp LG(TAB)>;
             key-positions = <12 38>;
+        };
+
+        colon {
+            bindings = <&kp COLON>;
+            key-positions = <31 22>;
         };
     };
 
